@@ -7,69 +7,107 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <header class="navbar">
-    <div class="logo">
-      <img src="./photos/netflix logo.png" alt="Netflix Logo">
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Series</a></li>
-        <li><a href="#">Films</a></li>
-        <li><a href="#">New & Popular</a></li>
-        <li><a href="#">My List</a></li>
-        <li><a href="#">Browse by Languages</a></li>
-      </ul>
-    </nav>
-    <div class="actions">
-      <i class="search">🔍</i>
-      <i class="profile">👤</i>
-    </div>
-  </header>
+  <script src="script.js"></script>
+  <div style="position: relative;">
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg netflix-navbar netflix-padding-left netflix-padding-right">
+      <div class="container-fluid">
+        <div class="netflix-row">
+          <div class="left d-flex align-items-center">
+            <a class="navbar-brand" href="#">
+              <img src="./photos/netflix logo.png" alt="">
+            </a>
+            <div  class="netflix-nav">
+               <section>
+                  <button>Home</button>
+                  <button>TV Shows</button>
+                  <button>Movies</button>
+                  <button>News & Popular</button>
+                  <button>My List</button>
+               </section>
+            </div>
+            <div class="netflix-dropdown-box dropdown">
+              <button class="netflix-dropdown dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Browse
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Home</a></li>
+                <li><a class="dropdown-item" href="#">TV Shows</a></li>
+                <li><a class="dropdown-item" href="#">Movies</a></li>
+                <li><a class="dropdown-item" href="#">News & Popular</a></li>
+                <li><a class="dropdown-item" href="#">My List</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="right d-flex align-items-center">
+            <i class="bi bi-search"></i>
+            <i class="bi bi-bell-fill"></i>
+            <section class="netflix-profile">
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <img src="https://via.placeholder.com/1200x600" alt="Hero Image">
-    <div class="hero-text">
-      <h1>Gilmore Girls</h1>
-      <div class="hero-buttons">
-        <button class="btn play">▶ Play</button>
-        <button class="btn info">More info</button>
+            </section>
+          </div>
+        </div>
       </div>
+    </nav>
+    <!-- video -->
+    <div class="">
+      <section class="netflix-home-video">
+         <div class="top"></div>
+         <div class="bottom"></div>
+         <video src="./Gilmore Girls_ Estreia mundial na Netflix.mp4" autoplay muted loop></video>
+         <div class="content">
+             <section class="left">
+                 <img src="./images/image2.webp" alt="">
+             
+                 <div class="d-flex mt-2">
+                   <button class="btn btn-light m-2" > <i class="bi bi-play-fill" style="color: black; padding: 0%;"></i> Play Now </button>
+                   <button class="btn btn-secondary m-2"><i class="bi bi-info-circle" style=" padding: 0%;"></i> More Info</button>
+                 </div>
+             </section>
+            
+         </div>
+       </section>
+      
+   </div>
+ <!-- video -->
+     <!-- Sections for Content -->
+  <section class="row">
+    <h2>Continue Watching For Profile 1</h2>
+    <div class="row-items">
+      <img src="./photos/mr plankton.png" alt="Mr Plankton">
+      <img src="./photos/bridgerton.jpg" alt="bridgerton">
+      <img src="./photos/doraemon.jpg" alt="doraemon">
+      <img src="./photos/lovely runner.jpg" alt="lovely runner">
+      <img src="./photos/gilmore girl cover.jpg" alt="Gilmore Girls">
+      <img src="./photos/doraemon.jpg" alt="doraemon">
+      <img src="./photos/lovely runner.jpg" alt="lovely runner">
     </div>
   </section>
 
-  <!-- Sections for Content -->
-  <section class="row">
-    <h2>Today's Top Picks for You</h2>
-    <div class="row-items">
-      <img src="https://via.placeholder.com/300x150" alt="Thumbnail">
-      <img src="https://via.placeholder.com/300x150" alt="Thumbnail">
-      <img src="https://via.placeholder.com/300x150" alt="Thumbnail">
-      <img src="https://via.placeholder.com/300x150" alt="Thumbnail">
-    </div>
-  </section>
 
   <section class="row">
     <h2>My List</h2>
     <div class="row-items">
-      <img src="https://via.placeholder.com/300x150" alt="Thumbnail">
-      <img src="https://via.placeholder.com/300x150" alt="Thumbnail">
-      <img src="https://via.placeholder.com/300x150" alt="Thumbnail">
-      <img src="https://via.placeholder.com/300x150" alt="Thumbnail">
-    </div>
+      <img src="./photos/one day.jpg" alt="one day">
+      <img src="./photos/ocean waves.jpg" alt="Thumbnail">
+      <img src="./photos/little italy.jpg" alt="little italy">      <img src="https://via.placeholder.com/300x150" alt="Thumbnail">
+      <img src="./photos/18x2 beyond youthful days.jpg" alt="one day">
+      <img src="./photos/love next door.jpg" alt="love next door">
+    </div> 
   </section>
 
   <section class="row">
     <h2>Because You Liked "How to Lose a Guy in 10 Days"</h2>
     <div class="row-items">
+      <img src="./photos/little italy.jpg" alt="little italy">     
+      <img src="./photos/hidden love.jpg" alt="Thumbnail">
+      <img src="./photos/drawing closer.jpg" alt="drawing closer">
       <img src="https://via.placeholder.com/300x150" alt="Thumbnail">
       <img src="https://via.placeholder.com/300x150" alt="Thumbnail">
-      <img src="https://via.placeholder.com/300x150" alt="Thumbnail">
-      <img src="https://via.placeholder.com/300x150" alt="Thumbnail">
+      
     </div>
   </section>
+
 
   <script src="script.js"></script>
 </body>

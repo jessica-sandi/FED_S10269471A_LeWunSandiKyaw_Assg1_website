@@ -1,9 +1,20 @@
-// Example: Add a scrolling effect for row items
-const rows = document.querySelectorAll('.row-items');
+$(document).ready(function(){
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 100) {
+          $(".netflix-navbar").css("background" , "#0C0C0C");
+        }
+  
+        else{
+            $(".netflix-navbar").css("background" , "transparent");  	
+        }
+    });
 
-rows.forEach((row) => {
-  row.addEventListener('wheel', (event) => {
-    event.preventDefault();
-    row.scrollLeft += event.deltaY;
-  });
-});
+  })
+
+
+function position(id){
+  var card = document.getElementsByClassName('card')[id];
+  // card.style.transform = 'scale(1.5)';
+  console.log(id)
+}
