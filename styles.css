@@ -323,3 +323,14 @@ ul{
   .row{
      color: #fff;
   }
+  #preview-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    display: none;
+    z-index: 10;
+  }
