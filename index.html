@@ -10,23 +10,24 @@
   <script src="script.js"></script>
   <div style="position: relative;">
     <!-- header -->
-    <nav class="navbar navbar-expand-lg netflix-navbar netflix-padding-left netflix-padding-right">
-      <div class="container-fluid">
-        <div class="netflix-row">
-          <div class="left d-flex align-items-center">
-            <a class="navbar-brand" href="#">
-              <img src="./photos/netflix logo.png" alt="">
-            </a>
-            <div  class="netflix-nav">
-               <section>
-                  <a href = "index.html"><button>Home</button></a>
-                  <a href = "shows.html"><button>TV Shows</button></a>
-                  <a href = "movies.html"><button>Movies</button></a>
-                  <a href = "news&popular.html"><button>News & Popular</button></a>
-                  <a href = "mylist.html"><button>My List</button></a>
-                  <a href = "browsebylanguages.html"><button>Browse By Languages</button></a>
-               </section>
-            </div>
+    <header class="netflix-header">
+      <div class="logo">
+        <h1>NETFLIX</h1>
+      </div>
+      <nav class="nav-bar">
+          <a href = "index.html"><button>Home</button></a>
+          <a href = "shows.html"><button>Series</button></a>
+          <a href = "movies.html"><button>Films</button></a>
+          <a href = "news&popular.html"><button>New & Popular</button></a>
+          <a href = "mylist.html"><button>My List</button></a>
+          <a href = "browsebylanguages.html"><button>Browse By Languages</button></a>
+      </nav>
+      <div class="user-menu">
+        <input type="text" placeholder="Search">
+        <span class="icon">🔔</span>
+        <span class="profile">👤▼</span>
+      </div>
+    </header>
             <div class="netflix-dropdown-box dropdown">
               <button class="netflix-dropdown dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 Browse
