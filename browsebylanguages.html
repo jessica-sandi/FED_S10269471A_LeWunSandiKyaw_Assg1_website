@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="browse.css">
 </head>
 <body>
-  <script src="script.js"></script>
+  <script src="javascript.js"></script>
   <header class="netflix-header">
     <div class="logo">
       <h1>NETFLIX</h1>
@@ -23,7 +23,16 @@
     <div class="user-menu">
       <input type="text" placeholder="Search">
       <span class="icon">🔔</span>
-      <span class="profile">👤▼</span>
+      <div class="profile-dropdown">
+        <img src="./photos/netflix profile 1.jpg" alt="Profile Picture" class="profile-image">
+        <div class="dropdown-menu">
+          <a href="./manage-profile.html">Manage Profile</a>
+          <a href="./manage-transfer.html">Transfer Profile</a>
+          <a href="./account.html">Account</a>
+          <a href="./help.html">Help Centre</a>
+          <a href="sign-out.html">Sign out of Netflix</a>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -34,24 +43,48 @@
         <div class="dropdown-filters">
           <label for="preferences">Select your preferences</label>
           <select id="preferences">
-            <option value="original">Original Language</option>
+            <option value="original">Original</option>
             <option value="dubbing">Dubbing</option>
             <option value="subtitles">Subtitles</option>
           </select>
   
           <select id="language">
             <option value="english">English</option>
+            <option value="arabic">Arabic</option>
+            <option value="Cantonese">Cantonese</option>
+            <option value="Danish">Danish</option>
+            <option value="Dutch">Dutch</option>
+            <option value="english">English</option>
+            <option value="filipino">Filipino</option>
+            <option value="Flemish">Flemish</option>
+            <option value="French">French</option>
+            <option value="German">German</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Indonesian">Indonesian</option>
+            <option value="Italian">Italian</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Korean">Korean</option>
+            <option value="malay">Malay</option>
+            <option value="malayalam">Malayalam</option>
+            <option value="Flemish">Marathi</option>
+            <option value="Norwegian">Norwegian</option>
+            <option value="polish">Polish</option>
+            <option value="Portuguese">Portuguese</option>
             <option value="spanish">Spanish</option>
-            <option value="french">French</option>
-            <option value="japanese">Japanese</option>
+            <option value="Swedish">Swedish</option>
+            <option value="tamil">Tamil</option>
+            <option value="telugu">Telugu</option>
+            <option value="thai">Thai</option>
+            <option value="turkish">Turkish</option>
+            <option value="Vietnamese">Vietnamese</option>
           </select>
   
           <label for="sort-by">Sort by</label>
           <select id="sort-by">
             <option value="suggestions">Suggestions For You</option>
-            <option value="popularity">Popularity</option>
-            <option value="newest">Newest</option>
-            <option value="rating">Rating</option>
+            <option value="year released">Year Released</option>
+            <option value="a-z">A-Z</option>
+            <option value="z-a">Z-A</option>
           </select>
         </div>
       </div>
