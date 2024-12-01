@@ -1,9 +1,30 @@
-body{
-  background-color: #e1e1e1;
+
+body {
+  background-color: #141414;
+  color: white;
+  font-family: Arial, sans-serif;
   overflow-x: hidden;
-  width: 100vw;
-  /* position: relative; */
+  margin: 0;  /* make sure there is no margin */
+  padding: 0;
 }
+action-buttons button {
+  padding: 10px 20px;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.play-button {
+  background-color: #e50914;
+  color: #fff;
+}
+
+.info-button {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000;
+}
+
 
 .netflix-home-video{
   width: 100%;
@@ -32,11 +53,12 @@ body{
 
 .netflix-home-video .content{
   position: absolute;
-  top: 0%;
+  top: 50%; /* Start from the middle vertically */
   width: 100%;
-  /* background-color: #fff; */
+  transform: translateY(-50%); /* Center by moving up half of its height */
   z-index: 100;
   display: flex;
+  align-items: center; /* Vertically centers items within the flex container */
 }
 
 .netflix-home-video .content .left{
@@ -107,12 +129,7 @@ body{
   .row{
      color: #fff;
   }
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #141414;
-    color: white;
-    overflow-x: hidden;
-  }
+ 
   
   .netflix-header {
     display: flex;
@@ -184,20 +201,11 @@ body{
   .profile-dropdown:hover .dropdown-menu {
     display: block;
   }
-  /* make sure there is no margin */
-  body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #141414;
-  color: white;
-  overflow-x: hidden;
-}
-.movie-row {
-  margin-bottom: 2rem;
-}
+ 
+ 
 
-.movie-row h2 {
+
+.row h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   
@@ -230,4 +238,379 @@ body{
 
 .movie-grid::-webkit-scrollbar-track {
   background: transparent; /* Transparent scrollbar track */
+}
+/* footer of index */
+.footer{
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+ul{
+  list-style: none;
+  font-size: 15px ;
+  color: rgba(255, 255, 255, 0.367);
+  font-weight: 100;
+}
+
+
+.service-btn{
+  background-color: transparent;
+   margin-left: 30px;
+    color: rgba(255, 255, 255, 0.367);
+    border: 1px solid rgba(255, 255, 255, 0.367);
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.copy-right{
+  font-size: 15px;
+    font-weight: 200;
+    color: rgb(249, 14, 14);
+    margin-left: 28px;
+}
+
+
+/* BROWSE by language css */
+
+
+.filter-row input{
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  margin-right: 1rem;
+
+}
+.browse-row {
+  margin-bottom: 2rem;
+}
+
+.browse-row h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.browse-grid {
+  display: flex;
+  justify-content: space-between; /* Evenly distribute items with spacing */
+  flex-wrap: wrap; /* Allow wrapping to a new line if needed */
+  gap: 10px; /* Add space between images */
+  padding: 10px; /* Optional padding around the container */
+}
+
+.browse-grid img {
+  max-width: 150px; /* Set a uniform width for images */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the images fit well */
+  border-radius: 5px; /* Optional rounded corners */
+  transition: transform 0.3s ease;
+}
+
+.browse-grid img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.filter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  color: white;
+}
+
+.filter-row h2 {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.dropdown-filters {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dropdown-filters label {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.dropdown-filters select {
+  padding: 0.5rem;
+  background-color: #1e1e1e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.dropdown-filters select:hover {
+  cursor: pointer;
+}
+
+.dropdown-filters select:focus {
+  outline: 2px solid red;
+}
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-menu input[type="text"] {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.profile-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background-color: #000;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown-menu a:hover {
+  background-color: #333;
+}
+
+.profile-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+
+/* for responsive */
+@media(max-width:767.98px){
+  .netflix-padding-left{
+      padding-left: 10px !important;
+  }
+  
+  
+  .netflix-padding-right{
+      padding-right: 10px !important;
+  }
+  .navbar-brand img{
+      width: 43px;
+ }
+ .navbar{
+     padding-top: unset !important;
+     padding-bottom: unset !important;
+ }
+ i{
+     font-size: 12px;
+     cursor: pointer;
+     padding: 5px !important;
+ }
+ .netflix-profile{
+     margin-left: 5px ;
+ }
+ .netflix-dropdown-box{
+  display: block;
+}
+.netflix-nav{
+  display: none !important;
+}
+
+/* video */
+.netflix-home-video .content .left{
+  margin-left: 25px;
+}
+.netflix-home-video .content .left img{
+  width: 200px;
+  margin-top: 90px !important;
+}
+button{
+  font-size: 10px !important;
+  width: max-content !important;
+  opacity: 0.8;
+}
+
+/*video*/
+.slider{
+  top: 250px;
+  margin-left: 0px;
+}
+
+.card{
+  width: 150px;
+}
+.margin-right{
+  margin-right: unset;
+}
+.card-icon{
+  font-size: 17px !important;
+}
+.card-body{
+  top: 80px !important;
+}
+.netflix-card-text{
+  font-size: 8px;
+}
+.position-slider2{
+  top: 0px !important;
+}
+.margin-title{
+  margin-top: 100px;
+}
+.margin-title2{
+  margin-top: 14px;
+}
+.copy-right{
+  
+    margin-left: 0px !important;
+}
+}
+
+/* for manage profile */
+
+/* Profile Selection Container */
+.profile-selection-container {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-selection-wrapper {
+  margin-top: 5%;
+}
+
+.profile-selection-header {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.profile-selection-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensures profiles wrap on smaller screens */
+  gap: 20px;
+}
+
+.profile-item {
+  width: 150px; /* Set a fixed width for the profile */
+  aspect-ratio: 1 / 1; /* Ensures a 1:1 aspect ratio (square) */
+  overflow: hidden; /* Hides overflow to maintain ratio */
+  border-radius: 10px; /* Optional rounded corners */
+  background-color: #000; /* Fallback background color */
+}
+
+.profile-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+}
+
+
+.profile-item p {
+  margin-top: 10px;
+}
+
+.profile-add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  border-radius: 10px;
+  width: 120px;
+  height: 120px;
+}
+
+.profile-add p {
+  margin: 0;
+}
+
+.manage-profiles-btn {
+  margin-top: 20px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.manage-profiles-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+
+/* Media Queries for Profile Selection Responsiveness */
+@media (max-width: 768px) {
+  .profile-selection-wrapper {
+    margin-top: 10%;
+  }
+
+  .profile-selection-header {
+    font-size: 1.5em;
+  }
+
+  .profile-item {
+    width: 100px;
+  }
+
+  .profile-item img,
+  .profile-add {
+    width: 100px;
+    height: 100px;
+  }
+
+  .manage-profiles-btn {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-selection-header {
+    font-size: 1.2em;
+  }
+
+  .profile-item {
+    width: 80px;
+  }
+
+  .profile-item img,
+  .profile-add {
+    width: 80px;
+    height: 80px;
+  }
+
+  .manage-profiles-btn {
+    padding: 6px 12px;
+    font-size: 0.9em;
+  }
 }
