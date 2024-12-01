@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <script src="javascript.js"></script>
+  
   <header class="netflix-header">
     <div class="logo">
       <h1>NETFLIX</h1>
@@ -43,14 +43,14 @@
         <div class="dropdown-filters">
           <label for="preferences">Select your preferences</label>
           <select id="preferences">
-            <option value="original">Original</option>
+            <option value="all">Original</option>
             <option value="dubbing">Dubbing</option>
             <option value="subtitles">Subtitles</option>
           </select>
   
           <label for="language">Language:</label>
           <select id="language">
-            <option value="english">English</option>
+            <option value="all">English</option>
             <option value="arabic">Arabic</option>
             <option value="Cantonese">Cantonese</option>
             <option value="Danish">Danish</option>
@@ -82,7 +82,7 @@
   
           <label for="sort-by">Sort by</label>
           <select id="sort-by">
-            <option value="suggestions">Suggestions For You</option>
+            <option value="default">Suggestions For You</option>
             <option value="year released">Year Released</option>
             <option value="a-z">A-Z</option>
             <option value="z-a">Z-A</option>
@@ -93,36 +93,36 @@
 
       </div>
       <div class="browse-grid">
-        <img src="./photos/one day.jpg" alt="Movie 1">
-      <img src="./photos/little italy.jpg" alt="Movie 2">
-      <img src="./photos/how to lose a guy in 10 days.jpg" alt="Movie 3">
-      <img src="./photos/nodody wants this.jpg"alt="Movie 4">
-      <img src="./photos/irish wish.jpg" alt="Movie 5">
-      <img src="./photos/mean girls.jpg" alt="Movie 6">
-      <img src="./photos/emily in paris.jpg" alt="Movie 7">
-      <img src="./photos/nanny diaries.jpg" alt="Movie 8">
-      <img src="./photos/instant fam.jpg" alt="Movie 9">
-      <img src="./photos/suits.jpg" alt="Movie 10">
-      <img src="./photos/lovely runner.jpg" alt="Movie 9">
-      <img src="./photos/doraemon.jpg" alt="Movie 10">
-      <img src="./photos/love next door.jpg "alt="Movie 4">
-      <img src="./photos/drawing closer.jpg" alt="Movie 5">
-      <img src="./photos/gilmore girl cover.jpg" alt="Movie 6">
-      <img src="./photos/hidden love.jpg" alt="Movie 7">
-      <img src="./photos/little italy.jpg" alt="Movie 8">
-      <img src="./photos/daddy's home.jpg" alt="Movie 9">
-      <img src="./photos/dog's journey.jpg" alt="Movie 10">
-      <img src="./photos/the merry gentleman.jpg" alt="Movie 11">
-      <img src="./photos/daddy's home.jpg" alt="Movie 1">
-      <img src="./photos/the merry gentleman.jpg" alt="Movie 2">
-      <img src="./photos/fam switch.jpg" alt="Movie 3">
-      <img src="./photos/monster in law.jpg "alt="Movie 4">
-      <img src="./photos/mother of the bride.jpg" alt="Movie 5">
-      <img src="./photos/mission cross.jpg" alt="Movie 6">
-      <img src="./photos/dog's journey.jpg" alt="Movie 7">
-      <img src="./photos/sisters.png" alt="Movie 8">
-      <img src="./photos/how to lose a guy in 10 days.jpg" alt="Movie 9">
-      <img src="./photos/cinderella's story.jpg" alt="Movie 10">
+        <img src="./photos/one day.jpg" alt="Movie 1"data-language="English" data-preference="Dubbing" data-title="One Day">
+      <img src="./photos/little italy.jpg" alt="Movie 2"data-language="English" data-preference="Dubbing" data-title="Little Italy">
+      <img src="./photos/how to lose a guy in 10 days.jpg" alt="Movie 3"data-language="English" data-preference="Dubbing" data-title="How to Lose a Guy in 10 Days">
+      <img src="./photos/nodody wants this.jpg"alt="Movie 4" alt="Movie 4"data-language="English" data-preference="Dubbing" data-title="Nodody Wants This">
+      <img src="./photos/irish wish.jpg" alt="Movie 5" alt="Movie 5"data-language="English" data-preference="Dubbing" data-title="Irish Wish">
+      <img src="./photos/mean girls.jpg" alt="Movie 6" data-language="French" data-preference="Subtitles" data-title="Mean Girls">
+      <img src="./photos/emily in paris.jpg" alt="Movie 7"data-language="French" data-preference="Subtitles" data-title="Emily In Paris">
+      <img src="./photos/nanny diaries.jpg" alt="Movie 8" data-language="French" data-preference="Subtitles" data-title="Nanny diaries">
+      <img src="./photos/instant fam.jpg" alt="Movie 9" data-language="French" data-preference="dubbing" data-title="Instant Family">
+      <img src="./photos/suits.jpg" alt="Movie 10" data-language="French" data-preference="dubbing" data-title="suits">
+      <img src="./photos/lovely runner.jpg" alt="Movie 11" data-language="Cantonese" data-preference="Subtitles" data-title="lovely runner">
+      <img src="./photos/doraemon.jpg" alt="Movie 12" data-language="Cantonese" data-preference="Subtitles" data-title="doraemon">
+      <img src="./photos/love next door.jpg "alt="Movie 13"data-language="Cantonese" data-preference="Subtitles" data-title="love next door">
+      <img src="./photos/drawing closer.jpg" alt="Movie 14"data-language="Japanese" data-preference="dubbing" data-title="drawing closer">
+      <img src="./photos/gilmore girl cover.jpg" alt="Movie 15"data-language="German" data-preference="Dubbing" data-title="Gilmore Girl">
+      <img src="./photos/hidden love.jpg" alt="Movie 16" data-language="Cantonese" data-preference="dubbing" data-title="hidden love">
+      <img src="./photos/little italy.jpg" alt="Movie 17" data-language="Cantonese" data-preference="dubbing" data-title="hidden love">
+      <img src="./photos/daddy's home.jpg" alt="Movie 18" data-language="Cantonese" data-preference="dubbing" data-title="hidden love">
+      <img src="./photos/dog's journey.jpg" alt="Movie 19" data-language="Cantonese" data-preference="dubbing" data-title="hidden love">
+      <img src="./photos/the merry gentleman.jpg" alt="Movie 20" data-language="Cantonese" data-preference="dubbing" data-title="hidden love">
+      <img src="./photos/daddy's home.jpg" alt="Movie 21" data-language="Cantonese" data-preference="dubbing" data-title="hidden love">
+      <img src="./photos/the merry gentleman.jpg" alt="Movie 22" data-language="Cantonese" data-preference="dubbing" data-title="hidden love">
+      <img src="./photos/fam switch.jpg" alt="Movie 23"data-language="Dutch" data-preference="dubbing" data-title="hidden love">
+      <img src="./photos/monster in law.jpg "alt="Movie 24" data-language="Dutch" data-preference="dubbing" data-title="hidden love">
+      <img src="./photos/mother of the bride.jpg" alt="Movie 25" data-language="Dutch" data-preference="dubbing" data-title="hidden love">
+      <img src="./photos/mission cross.jpg" alt="Movie 26"data-language="Dutch" data-preference="dubbing" data-title="hidden love">
+      <img src="./photos/dog's journey.jpg" alt="Movie 27" data-language="Dutch" data-preference="dubbing" data-title="hidden love">
+      <img src="./photos/sisters.png" alt="Movie 28" data-language="Dutch" data-preference="dubbing" data-title="hidden love">
+      <img src="./photos/how to lose a guy in 10 days.jpg" alt="Movie 29" data-language="Dutch" data-preference="dubbing" data-title="hidden love">
+      <img src="./photos/cinderella's story.jpg" alt="Movie 30" data-language="Dutch" data-preference="dubbing" data-title="hidden love">
       </div>
     </section>
     
@@ -181,5 +181,8 @@
 </html>
 
   </main>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="javascript.js"></script>
+
 </body>
 </html>
