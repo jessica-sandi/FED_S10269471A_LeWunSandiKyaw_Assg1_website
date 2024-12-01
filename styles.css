@@ -103,32 +103,7 @@ action-buttons button {
     height: 8px; /* Adjust the scrollbar height */
   }
   
-  /* Media Queries for Responsiveness */
-  @media screen and (max-width: 768px) {
-    .nav-links {
-      display: none;
-    }
-  
-    .actions {
-      font-size: 1.2em;
-    }
-  
-    .hero-text {
-      bottom: 10%;
-    }
-  
-    .btn {
-      font-size: 0.9em;
-    }
-  
-    .row-items img {
-      width: 200px;
-      height: 100px;
-    }
-  }
-  .row{
-     color: #fff;
-  }
+ 
  
   
   .netflix-header {
@@ -501,6 +476,11 @@ button{
   text-align: center;
   margin: 0;
   padding: 0;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-selection-wrapper {
@@ -509,58 +489,48 @@ button{
 
 .profile-selection-header {
   font-size: 2em;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .profile-selection-grid {
   display: flex;
   justify-content: center;
+  gap: 30px; /* Larger gap for a clean layout */
   flex-wrap: wrap; /* Ensures profiles wrap on smaller screens */
-  gap: 20px;
 }
 
 .profile-item {
-  width: 150px; /* Set a fixed width for the profile */
-  aspect-ratio: 1 / 1; /* Ensures a 1:1 aspect ratio (square) */
-  overflow: hidden; /* Hides overflow to maintain ratio */
-  border-radius: 10px; /* Optional rounded corners */
-  background-color: #000; /* Fallback background color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .profile-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image covers the container */
+  width: 150px; /* Fixed size */
+  height: 150px; /* Fixed size */
+  border-radius: 10%; /* Circular profile pictures */
+  object-fit: cover;
+  border: 2px solid #fff; /* Optional border */
 }
 
 
 .profile-item p {
   margin-top: 10px;
+  font-size: 1em;
 }
 
-.profile-add {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: gray;
-  border-radius: 10px;
-  width: 120px;
-  height: 120px;
-}
 
-.profile-add p {
-  margin: 0;
-}
 
 .manage-profiles-btn {
-  margin-top: 20px;
+  margin-top: 30px;
   background-color: transparent;
   color: white;
   border: 1px solid white;
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
+  font-size: 1em;
 }
 
 .manage-profiles-btn:hover {
@@ -613,4 +583,40 @@ button{
     padding: 6px 12px;
     font-size: 0.9em;
   }
+  .movie-item video {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    height: auto; /* Maintain aspect ratio */
+    transform: translate(-50%, -50%); /* Center the video */
+    object-fit: cover;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 99999;
+  }
+}
+
+
+
+.movie-item video {
+  position: absolute;
+  top: 125%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  height: auto; /* Maintain aspect ratio */
+  transform: translate(-50%, -50%); /* Center the video */
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 99999;
+}
+
+.movie-item:hover img {
+  opacity: 0;
+}
+
+.movie-item:hover video {
+  opacity: 1;
+  pointer-events: auto;
 }
