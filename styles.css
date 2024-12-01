@@ -176,10 +176,6 @@ action-buttons button {
   .profile-dropdown:hover .dropdown-menu {
     display: block;
   }
- 
- 
-
-
 .row h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -214,6 +210,7 @@ action-buttons button {
 .movie-grid::-webkit-scrollbar-track {
   background: transparent; /* Transparent scrollbar track */
 }
+
 /* footer of index */
 .footer{
   margin-top: 150px;
@@ -539,65 +536,6 @@ button{
 }
 
 
-/* Media Queries for Profile Selection Responsiveness */
-@media (max-width: 768px) {
-  .profile-selection-wrapper {
-    margin-top: 10%;
-  }
-
-  .profile-selection-header {
-    font-size: 1.5em;
-  }
-
-  .profile-item {
-    width: 100px;
-  }
-
-  .profile-item img,
-  .profile-add {
-    width: 100px;
-    height: 100px;
-  }
-
-  .manage-profiles-btn {
-    padding: 8px 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .profile-selection-header {
-    font-size: 1.2em;
-  }
-
-  .profile-item {
-    width: 80px;
-  }
-
-  .profile-item img,
-  .profile-add {
-    width: 80px;
-    height: 80px;
-  }
-
-  .manage-profiles-btn {
-    padding: 6px 12px;
-    font-size: 0.9em;
-  }
-  .movie-item video {
-    position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    height: auto; /* Maintain aspect ratio */
-    transform: translate(-50%, -50%); /* Center the video */
-    object-fit: cover;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-    z-index: 99999;
-  }
-}
-
-
 
 .movie-item video {
   position: absolute;
@@ -619,4 +557,215 @@ button{
 .movie-item:hover video {
   opacity: 1;
   pointer-events: auto;
+}
+@media (max-width: 767.98px) {
+  body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  /* Navigation bar */
+  .netflix-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nav-bar button {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+
+  /* Hero section adjustments */
+  .netflix-home-video {
+    width: 100%;
+    position: relative;
+  }
+
+  .netflix-home-video .content {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .netflix-home-video .content .left {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .netflix-home-video .content .left img {
+    width: 70%;
+    margin-top: 10px;
+  }
+
+  .netflix-home-video .action-buttons button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    margin: 5px 0;
+  }
+
+  /* Rows */
+  .row {
+    margin-bottom: 1rem;
+  }
+
+  .row h2 {
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+
+  .movie-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    overflow: visible;
+  }
+
+  .movie-grid img {
+    width: 90%; /* Fit the screen */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  /* Browse section */
+  .browse-grid {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .browse-grid img {
+    max-width: 90px;
+    height: auto;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer ul {
+    padding: 0;
+  }
+
+  /* Dropdown menu adjustments */
+  .profile-dropdown {
+    text-align: center;
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Manage Profiles */
+  .profile-selection-container {
+    padding: 10px;
+    align-items: flex-start;
+  }
+
+  .profile-selection-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .profile-item img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-item p {
+    font-size: 0.9rem;
+  }
+
+  .manage-profiles-btn {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+  /* Base styles for the movie-row */
+.movie-row {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.filter-row h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center; /* Center-align heading for mobile */
+}
+
+.dropdown-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Add spacing between dropdowns */
+  justify-content: center; /* Center the dropdowns */
+}
+
+.dropdown-filters label,
+.dropdown-filters select {
+  font-size: 0.9rem; /* Slightly smaller text for mobile */
+  width: 100%; /* Make dropdowns take full width */
+}
+
+.dropdown-filters select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Browse grid styling for mobile */
+.browse-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Flexible grid for mobile */
+  gap: 10px;
+  justify-content: center;
+}
+
+.browse-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .filter-row {
+    padding: 10px;
+  }
+
+  /* Adjust grid for smaller screens */
+  .browse-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Smaller grid items */
+    gap: 8px;
+  }
+
+  .browse-grid img {
+    border-radius: 5px;
+  }
+
+  /* Navigation and filters optimized */
+  .dropdown-filters {
+    flex-direction: column; /* Stack dropdowns on mobile */
+    align-items: center;
+  }
+
+  .dropdown-filters label,
+  .dropdown-filters select {
+    text-align: left;
+  }
+}
+
 }
