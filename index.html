@@ -7,110 +7,72 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <script src="script.js"></script>
-  <div style="position: relative;">
-    <!-- header -->
-    <header class="netflix-header">
-      <div class="logo">
-        <h1>NETFLIX</h1>
-      </div>
-      <nav class="nav-bar">
-          <a href = "index.html"><button>Home</button></a>
-          <a href = "shows.html"><button>Series</button></a>
-          <a href = "movies.html"><button>Films</button></a>
-          <a href = "news&popular.html"><button>New & Popular</button></a>
-          <a href = "mylist.html"><button>My List</button></a>
-          <a href = "browsebylanguages.html"><button>Browse By Languages</button></a>
-      </nav>
-      <div class="user-menu">
-        <input type="text" placeholder="Search">
-        <span class="icon">🔔</span>
-        <span class="profile">👤▼</span>
-      </div>
-    </header>
-            <div class="netflix-dropdown-box dropdown">
-              <button class="netflix-dropdown dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                Browse
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Home</a></li>
-                <li><a class="dropdown-item" href="#">TV Shows</a></li>
-                <li><a class="dropdown-item" href="#">Movies</a></li>
-                <li><a class="dropdown-item" href="#">News & Popular</a></li>
-                <li><a class="dropdown-item" href="#">My List</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="right d-flex align-items-center">
-            <i class="bi bi-search"></i>
-            <i class="bi bi-bell-fill"></i>
-            <section class="netflix-profile">
-
-            </section>
-          </div>
+  <header class="netflix-header">
+    <div class="logo">
+      <h1>NETFLIX</h1>
+    </div>
+    <nav class="nav-bar">
+      <a href = "index.html"><button>Home</button></a>
+        <a href = "shows.html"><button>Series</button></a>
+        <a href = "movies.html"><button>Films</button></a>
+        <a href = "news&popular.html"><button>New & Popular</button></a>
+        <a href = "mylist.html"><button>My List</button></a>
+        <a href = "browsebylanguages.html"><button>Browse By Languages</button></a>
+    </nav>
+    <div class="user-menu">
+      <input type="text" placeholder="Search">
+      <span class="icon">🔔</span>
+      <div class="profile-dropdown">
+        <img src="./photos/netflix profile 1.jpg" alt="Profile" class="profile-image">
+        <div class="dropdown-menu">
+          <a href="./manage-profile.html">Manage Profile</a>
+          <a href="./manage-transfer.html">Transfer Profile</a>
+          <a href="./account.html">Account</a>
+          <a href="./help.html">Help Centre</a>
+          <a href="sign-out.html">Sign Out</a>
         </div>
       </div>
-    </nav>
-    <!-- video -->
+    </div>
+  </header>
+
+  <main class="hero-section">
+    <div class="hero-content">
+        <!-- video -->
     <div class="">
       <section class="netflix-home-video">
          <div class="top"></div>
-         <div class="bottom"></div>
-         <video src="./videos/Gilmore Girls_ Estreia mundial na Netflix.mp4" autoplay muted loop></video>
+         
+         <video src="./videos/Gilmore Girls_ A Year in the Life .mp4" autoplay muted loop></video>
          <div class="content">
              <section class="left">
-                 <img src="./images/image2.webp" alt="">
-             
-                 <div class="d-flex mt-2">
-                   <button class="btn btn-light m-2" > <i class="bi bi-play-fill" style="color: black; padding: 0%;"></i> Play Now </button>
-                   <button class="btn btn-secondary m-2"><i class="bi bi-info-circle" style=" padding: 0%;"></i> More Info</button>
-                 </div>
-             </section>
-            
-         </div>
-       </section>
-      
-   </div>
- <!-- video -->
-     <!-- Sections for Content -->
-  <section class="row">
-    <h2>Continue Watching For Profile 1</h2>
-    <div class="row-items">
-      <img src="./photos/mr plankton.png" alt="Mr Plankton">
-      <img src="./photos/bridgerton.jpg" alt="bridgerton">
-      <img src="./photos/doraemon.jpg" alt="doraemon">
-      <img src="./photos/lovely runner.jpg" alt="lovely runner">
-      <img src="./photos/gilmore girl cover.jpg" alt="Gilmore Girls">
-      <img src="./photos/doraemon.jpg" alt="doraemon">
-      <img src="./photos/lovely runner.jpg" alt="lovely runner">
+      <h1>Gilmore Girls</h1>
+      <p>
+        Avery's excitement over spending Christmas with her boyfriend's family
+        deflates like a blow-up Santa when her ex unexpectedly shows up.
+      </p>
+      <div class="action-buttons">
+        <button class="play-button">▶ Play</button>
+        <button class="info-button">More Info</button>
+      </div>
+      <span class="ranking">TOP 10 <br> No. 4 in Films Today</span>
     </div>
-  </section>
-
-
-  <section class="row">
-    <h2>My List</h2>
-    <div class="row-items">
-      <img src="./photos/one day.jpg" alt="one day">
-      <img src="./photos/ocean waves.jpg" alt="Thumbnail">
-      <img src="./photos/little italy.jpg" alt="little italy">      <img src="https://via.placeholder.com/300x150" alt="Thumbnail">
-      <img src="./photos/18x2 beyond youthful days.jpg" alt="one day">
-      <img src="./photos/love next door.jpg" alt="love next door">
-    </div> 
-  </section>
+   
+  </main>
 
   <section class="row">
     <h2>Because You Liked "How to Lose a Guy in 10 Days"</h2>
-    <div class="row-items">
-      <img src="./photos/little italy.jpg" alt="little italy">     
-      <img src="./photos/hidden love.jpg" alt="Thumbnail">
-      <img src="./photos/drawing closer.jpg" alt="drawing closer">
-      <img src="https://via.placeholder.com/300x150" alt="Thumbnail">
-      <img src="https://via.placeholder.com/300x150" alt="Thumbnail">
-      
+    <div class="movie-grid">
+      <img src="./photos/18x2 beyond youthful days.jpg" alt="Movie 1">
+      <img src="./photos/bridgerton.jpg" alt="Movie 2">
+      <img src="./photos/mr plankton.png" alt="Movie 3">
+      <img src="./photos/love next door.jpg "alt="Movie 4">
+      <img src="./photos/drawing closer.jpg" alt="Movie 5">
+      <img src="./photos/gilmore girl cover.jpg" alt="Movie 6">
+      <img src="./photos/hidden love.jpg" alt="Movie 7">
+      <img src="./photos/little italy.jpg" alt="Movie 8">
+      <img src="./photos/lovely runner.jpg" alt="Movie 9">
+      <img src="./photos/doraemon.jpg" alt="Movie 10">
     </div>
   </section>
-
-
-  <script src="script.js"></script>
 </body>
 </html>

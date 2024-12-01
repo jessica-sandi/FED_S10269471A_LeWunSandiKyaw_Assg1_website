@@ -1,106 +1,13 @@
 body{
-  background-color: #141414;
+  background-color: #e1e1e1;
   overflow-x: hidden;
   width: 100vw;
   /* position: relative; */
 }
 
-.netflix-padding-left{
-  padding-left: 57px;
-}
-.netflix-padding-right{
-  padding-right: 57px;
-}
-.netflix-navbar{
-  /* background-color: #0C0C0C !important; */
-  z-index: 1000;
-  transition: background 0.2s linear;
-  position: fixed;
-  width: 100vw;
-}
-.navbar-brand img{
-  width: 100px;
-}
-
-.netflix-row{
- width: 100%;
- display: flex;
- justify-content: space-between !important;
- align-items: center;
-}
-.netflix-row .left{
- width: max-content
-}
-.netflix-row .right{
- width: max-content
-}
-.netflix-dropdown-box{
-  display: none;
-}
-
-.netflix-dropdown{
-  background-color: transparent;
-  color: #fff;
-  border: none;
-  font-size: 9px !important;
-}
-
-.netflix-dropdown-box .dropdown-menu{
-  background-color: rgba(0, 0, 0, 0.784);
-  font-size: 9px !important;
-  color: #fff !important;
-  margin-left: -80px;
-  border-top: 3px solid #fff;
-  margin-top: 30px;
-}
-
-.netflix-dropdown-box .dropdown-menu .dropdown-item{
-   color: rgba(255, 255, 255, 0.646);
-   text-align: center;
-   width: 250px;
-   font-size: 15px;
-   padding: 10px 20px;
-}
-
-.netflix-dropdown-box .dropdown-menu .dropdown-item:hover{
-  background-color: rgba(255, 255, 255, 0.133);
-  color: #fff;
-}
-
-i{
-  font-size: 20px;
-  color: #fff;
-  padding: 5px 20px;
-}
-
-.netflix-profile{
-  width: 30px;
-  height: 30px;
-  background-color: gray;
-  border-radius: 4px;
-  margin-left: 20px;
-  cursor: pointer;
-}
-.netflix-nav{
-  display: block ;
-  align-items: center;
-}
-
-.netflix-nav button{
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.623);
-  border: none;
-  font-size: 13px;
-}
-
-.netflix-nav button:hover{
-  color: #fff;
-}
-
-
 .netflix-home-video{
   width: 100%;
-  z-index: 10;
+  z-index: 1;/* Ensure it does not overlap the dropdown menu */
   position: relative;
 }
 .netflix-home-video .top{
@@ -136,156 +43,33 @@ i{
   margin-left: 80px;
 }
 .netflix-home-video .content .left img{
- margin-top: 190px;
+ margin-top: 1px;
  
 }
-.netflix-home-video .content .right{
-  width: 50%;
-}
-.slider{
-  position: absolute;
-  top: 600px ;
-  z-index: 500;
-  /* margin-left: 80px; */
+
+.netflix-header .logo h1 {
+  color: red;
+  font-size: 1.5rem;
 }
 
 
-
-.slider2{
-  position: absolute;
-  top: 800px ;
-  z-index: 500;
-}
-
-.slider3{
-  position: absolute;
-  top: 1000px ;
-  z-index: 500;
-}
-
-
-.card{
-  width: 250px;
-  background-color: #141414;
-  border-radius: 4px;
-  transition: 0.2s linear;
-  margin: 3px;
-  position: relative;
-}
-
-
-.card:hover{
-  transform: scaleX(1.4) scaleY(1.4);
-  z-index: 10;
-}
-
-
-.card-body{
-  display: none;
-  /* height: 0px; */
-  padding: 10px 15px;
-  position: absolute;
-  background-color: #141414;
-  top: 120px;
-  width: 100%;
-}
-
-
-.card-icon{
-  color: #fff;
-  padding: 0px !important;
-  font-size: 28px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.card:hover > .card-body{
-  display: block;
-  /* height: max-content !important; */
-}
-
-.carousel-control-prev{
-  display: none;
-}
-
-.carousel-control-next{
-  display: none;
-}
-
-.tab-change-btn{
-  border: none;
-  width: 30px !important;
-}
-
-
-.margin-right{
-  margin-right: 100px;
-}
-
-.netflix-card-text{
-  font-size: 12px ;
-}
-
-.position-slider2{
-  top: 10px !important;
-  position: absolute !important;
-}
-
-.margin-title2{
-  margin-top: 33px;
-}
-
-.position-slider3{
-  top: 10px !important;
-  position: absolute !important;
-}
-
-
-.footer{
-  margin-top: 150px;
-  margin-bottom: 100px;
-}
-
-ul{
-  list-style: none;
-  font-size: 15px ;
-  color: rgba(255, 255, 255, 0.367);
-  font-weight: 100;
-}
-
-
-.service-btn{
-  background-color: transparent;
-   margin-left: 30px;
-    color: rgba(255, 255, 255, 0.367);
-    border: 1px solid rgba(255, 255, 255, 0.367);
-    font-size: 15px;
-    font-weight: 100;
-}
-
-.copy-right{
-  font-size: 15px;
-    font-weight: 200;
-    color: rgb(249, 14, 14);
-    margin-left: 28px;
-}
   /* Rows */
   .row {
-    margin: 20px 0;
-    padding: 0 20px;
+    margin-bottom: 2rem; /* Add spacing between rows */
   }
   
   .row h2 {
-    margin-bottom: 10px;
+    color: white; /* Adjust color to match the theme */
+  margin-bottom: 1rem;
   }
   
-  .row-items {
+  .row.movie-grid {
     display: flex;
     overflow-x: auto;
     gap: 10px;
   }
   
-  .row-items img {
+  .movie {
     width: 300px;
     height: 150px;
     object-fit: cover;
@@ -293,8 +77,8 @@ ul{
   }
   
   /* Scrollbar Styling */
-  .row-items::-webkit-scrollbar {
-    display: none;
+  .movie-grid::-webkit-scrollbar {
+    height: 8px; /* Adjust the scrollbar height */
   }
   
   /* Media Queries for Responsiveness */
@@ -323,17 +107,6 @@ ul{
   .row{
      color: #fff;
   }
-  #preview-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 80%;
-    border: 2px solid #fff;
-    border-radius: 5px;
-    display: none;
-    z-index: 10;
-  }
   body {
     font-family: Arial, sans-serif;
     background-color: #141414;
@@ -349,9 +122,9 @@ ul{
     background-color: #000;
   }
   
-  .netflix-header .logo h1 {
-    color: red;
-    font-size: 1.5rem;
+  .user-menu {
+    display: flex;
+    align-items: center;
   }
   
   .nav-bar button {
@@ -366,52 +139,95 @@ ul{
   .nav-bar button:hover {
     color: red;
   }
-  
-  .user-menu {
-    display: flex;
-    align-items: center;
-  }
-  
-  .user-menu input {
-    padding: 0.5rem;
-    border: none;
-    border-radius: 4px;
-    margin-right: 1rem;
-  }
-  
-  .user-menu .icon,
-  .user-menu .profile {
-    margin-left: 1rem;
-    cursor: pointer;
-  }
-  
-  main {
-    padding: 2rem;
-  }
-  
-  .movie-row {
-    margin-bottom: 2rem;
-  }
-  
-  .movie-row h2 {
+  /* icon */
+  .icon {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .movie-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 1rem;
-  }
-  
-  .movie-grid img {
-    width: 100%;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-  }
-  
-  .movie-grid img:hover {
-    transform: scale(1.1);
     cursor: pointer;
   }
   
+  .profile-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    display: none;/* Initially hidden */
+    position: absolute;
+    right: 0;/* Aligns it to the right */
+    top: 100%; /* Aligns below the profile icon */
+    background-color: #000; /* Background color to match the theme */
+    color: white;
+    border: 1px solid #333;
+  padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999;/* Ensures it appears above other elements */
+  }
+  
+  .dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #333;
+  }
+  
+  .profile-dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  /* make sure there is no margin */
+  body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: white;
+  overflow-x: hidden;
+}
+.movie-row {
+  margin-bottom: 2rem;
+}
+
+.movie-row h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  
+}
+
+.movie-grid {
+  display: flex; /* Make the images align horizontally */
+  gap: 10px; /* Add spacing between images */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-behavior: smooth; /* Optional: Add smooth scrolling */
+  padding: 10px 0; /* Add vertical padding */
+}
+
+.movie-grid img {
+  
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  flex-shrink: 0; /* Prevent images from shrinking */
+  width: 200px; /* Set a fixed width for images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Add rounded corners */
+  object-fit: cover; /* Ensure images fill their containers */
+  cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+.movie-grid img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.movie-grid::-webkit-scrollbar-track {
+  background: transparent; /* Transparent scrollbar track */
+}
